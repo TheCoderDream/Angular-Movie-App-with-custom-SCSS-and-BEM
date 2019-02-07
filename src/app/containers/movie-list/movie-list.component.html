@@ -1,0 +1,15 @@
+
+<app-slider *ngIf="moviesForSlide" [movies]="moviesForSlide"></app-slider>
+<app-search-bar (searchTermChanged)="onSearchMovie($event)"></app-search-bar>
+<h1 class="heading">{{title}}</h1>
+
+<div class="row">
+
+  <div class="col" *ngFor="let movie of movies">
+    <app-movie [movie]="movie">
+
+    </app-movie>
+  </div>
+</div>
+
+<app-spinner ></app-spinner>

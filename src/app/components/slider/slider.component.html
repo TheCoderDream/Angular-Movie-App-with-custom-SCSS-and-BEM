@@ -1,0 +1,17 @@
+<div class="slider">
+  <app-banner
+    *ngFor="let movie of movies"
+    [@move]="state"
+    (@move.done)="onFinish()"
+    (@move.start)="onStart()"
+    [movie]="movie"
+  ></app-banner>
+  <a
+    [class.isDisabled]="false"
+    class="slider__btn-left"
+    (click)="moveLeft()">&#10094;</a>
+  <a
+    [class.isDisabled]="false"
+    class="slider__btn-right"
+    (click)="moveRight()">&#10095;</a>
+</div>

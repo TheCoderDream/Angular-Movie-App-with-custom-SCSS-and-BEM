@@ -1,0 +1,14 @@
+<div *ngIf="movieDetail && actors" class="movie-detail">
+  <app-movie-info [movie]="movieDetail"></app-movie-info>
+  <app-movie-info-bar
+    [budget]="movieDetail.budget"
+    [revenue]="movieDetail.revenue"
+    [time]="movieDetail.runtime"
+  ></app-movie-info-bar>
+  <h1 class="movie-detail__heading">Actors</h1>
+  <div class="row" style="margin-top: 8rem">
+    <div *ngFor="let actor of actors" class="col">
+      <app-actor [actor]="actor"></app-actor>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div
+  class="banner"
+  [ngStyle]="{
+    'background-image': 'linear-gradient(to bottom, rgba(0,0,0,0) 39%,rgba(0,0,0,0) 41%,rgba(0,0,0,0.65) 100%), url('+movieApiService.getMainImagePath(movie.backdrop_path)+') '
+  }"
+>
+<div class="banner__content">
+  <div class="banner__text-container">
+    <h1 class="banner__heading">{{movie.title}}</h1>
+    <p class="banner__overview">{{movie.overview}}</p>
+  </div>
+</div>
+</div>

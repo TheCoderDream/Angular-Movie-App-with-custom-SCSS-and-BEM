@@ -1,0 +1,11 @@
+<div class="search-bar">
+  <div class="search-bar__content">
+    <i class="search-bar__icon fas fa-search"></i>
+    <input
+      class="search-bar__input"
+      #searchTerm
+      type="text"
+      placeholder="Search Movies"
+      (keyup)="onSearchTermChange(searchTerm.value.trim())">
+  </div>
+</div>

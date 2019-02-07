@@ -1,0 +1,6 @@
+<div class="movie" routerLink="{{movie.id}}">
+  <span class="movie__rate"><i class="far fa-star" style="color: white; font-size: 1.2rem"></i> {{movie.vote_average}}</span>
+  <div class="movie__genres">{{genres}}</div>
+  <img class="movie__image" [src]="movieApiService.getMoviePoster(movie.poster_path)"/>
+  <p class="movie__overview">{{movie.overview | overviewShorter}}</p>
+</div>
