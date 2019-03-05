@@ -1,4 +1,4 @@
-# Here is live demo <a href="http://nasty-bit.surge.sh/" style="font-size: 40px">CLICK TO SEE DEMO</a>
+# Here is the live demo <a href="http://nasty-bit.surge.sh/" style="font-size: 40px">CLICK TO SEE DEMO</a>
 
 ![alt-text](https://github.com/TheCodersDream/Angular-Movie-App-with-custom-SCSS-and-BEM/blob/master/Screenshot_1.png)
 ![alt-text](https://github.com/TheCodersDream/Angular-Movie-App-with-custom-SCSS-and-BEM/blob/master/Screenshot_5.png)
